@@ -11,7 +11,7 @@
     ZC_CityLabel *label1 = [[ZC_CityLabel alloc]initWithFrame:CGRectMake(10, 100, 100, 40)];
 
     label1.text = @"请选择省";//默认显示文字
-    label1.userInteractionEnabled = YES;  //防止时间阻断
+    label1.userInteractionEnabled = YES;  //防止事件阻断
     label1.groupName = @"sb";//设置组名,因为一个项目中可能会遇到多个城市选择
     label1.zc_cityType = ZC_CityLabelPro;//点击这个按钮,选择省
     label1.backgroundColor = [UIColor redColor];
