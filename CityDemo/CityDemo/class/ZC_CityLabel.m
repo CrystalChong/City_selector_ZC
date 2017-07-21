@@ -162,7 +162,7 @@
     [_btn setImage:[UIImage imageNamed:@"图层-0"] forState:UIControlStateNormal];
     [window addSubview:_btn];
     [self.tableView reloadData];
-    self.tableView.backgroundColor = [UIColor redColor];
+//    self.tableView.backgroundColor = [UIColor redColor];
     
 }
 

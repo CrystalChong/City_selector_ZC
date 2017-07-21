@@ -5,7 +5,7 @@
 
 #import "ZC_CityLabel.h"
 
-然后使用这个类创建label  (ZC_CityLabel.h)继承与lable 
+然后使用这个类创建label  (ZC_CityLabel.h)继承与lable 所以可以按照自己的喜欢的样式设计label.
 
 
     ZC_CityLabel *label1 = [[ZC_CityLabel alloc]initWithFrame:CGRectMake(10, 100, 100, 40)];
