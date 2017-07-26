@@ -50,6 +50,15 @@
     self.storyBord.userInteractionEnabled = YES;
     self.storyBord.zc_cityType = ZC_CityLabelCit;
     
+}
+
+- (void)_reViewBorderWIthView:(UIView *)view{
+    
+    view.layer.borderWidth = 1;
+    view.layer.borderColor = [UIColor blackColor].CGColor;
+    view.layer.cornerRadius = 3;
+    view.layer.masksToBounds = YES;
+    
     
 }
 
