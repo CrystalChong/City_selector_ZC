@@ -44,23 +44,33 @@
     label.zc_cityType = ZC_CityLabelDis;
     label.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:label];
-    
-    
+
     self.storyBord.groupName = @"sbw";
     self.storyBord.userInteractionEnabled = YES;
     self.storyBord.zc_cityType = ZC_CityLabelCit;
-    
+    [self _reViewBorderWithView:label1];
+    [self _reViewBorderWithView:label2];
+    [self _reViewBorderWithView:label];
 }
 
-- (void)_reViewBorderWIthView:(UIView *)view{
-    
-    view.layer.borderWidth = 1;
-    view.layer.borderColor = [UIColor blackColor].CGColor;
-    view.layer.cornerRadius = 3;
-    view.layer.masksToBounds = YES;
-    
-    
+//增加圆角样式;
+#pragma mark -- 给控件增加边框
+- (void)_reViewBorderWithView:(UIView *)textView{
+
+    textView.layer.borderWidth = 1;
+    textView.layer.borderColor = [UIColor colorWithWhite:.9 alpha:1].CGColor;
+    textView.layer.cornerRadius = 5;
+    textView.layer.masksToBounds = YES;
+    textView.backgroundColor = [UIColor whiteColor];
+    if ([textView isKindOfClass:[UILabel class]]) {
+        UILabel *label = (UILabel *)textView;
+        label.textColor = [UIColor colorWithRed:149/255.f green:149/255.f blue:149/255.f alpha:1];
+        label.font = [UIFont systemFontOfSize:14];
+        label.adjustsFontSizeToFitWidth =NO;
+
+    }
 }
+
 
 
 - (void)didReceiveMemoryWarning {

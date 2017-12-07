@@ -27,6 +27,7 @@
     self = [super initWithFrame:frame];
     if(self != nil){
         self.textAlignment = NSTextAlignmentCenter;
+        self.userInteractionEnabled = YES;
     }
     
     return self;
@@ -34,6 +35,7 @@
 
 -(void)awakeFromNib{
     [super awakeFromNib];
+    self.userInteractionEnabled  = YES;
     
 }
 
